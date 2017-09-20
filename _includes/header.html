@@ -1,0 +1,67 @@
+
+<!-- <header class="main_header">
+  <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
+  <nav class="main_menu">
+    <a href="{{site.baseurl}}/about/">About</a>
+    <a href="{{site.baseurl}}/contact/">Contact</a>
+  </nav>
+</header> End Section Header -->
+		<header class="main_header">
+				<div class="container">
+					
+					<a href="{{site.baseurl}}/" class="logo wow zoomIn"><img src="{{site.baseurl}}/images/logo.png" alt=""/></a>					
+					
+						<div class="navigation">
+						<nav class="navbar">
+						{% assign active = page.url | downcase | split: '/' %}
+								<!-- toggle for better mobile display -->
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+								<div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav">
+										<li  {% if active[1] == '{{index.html' %}class='active'{% endif %}>
+											<a href="{{site.baseurl}}/">Home</a>
+										</li>
+										<li class="dropdown">
+											<a {% if active[1] == 'product' %}class='active'{% endif %} href="{{site.baseurl}}/product" class="dropdown-toggle"  >Product <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li {% if active[1] == 'victim' %}class='active'{% endif %}>
+													<a href="{{site.baseurl}}/victim"> Victim Notifications</a></li>
+												<li {% if active[1] == 'emergency' %}class='active'{% endif %}>
+													<a href="{{site.baseurl}}/emergency"> Non-Emergency Requests </a></li>
+												<li {% if active[1] == 'responder' %}class='active'{% endif %}>
+													<a href="{{site.baseurl}}/responder"> CAD Responder </a></li>
+											</ul>
+										</li>
+										<!-- <li>
+											<a href="{{site.baseurl}}/module">Module</a>
+										</li> -->
+										<li class="dropdown">
+											<a {% if active[1] == 'resource' %}class='active'{% endif %} href="{{site.baseurl}}/resource" class="dropdown-toggle" {% if active[1] == 'resource' %}class='active'{% endif %}>resources <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li {% if active[1] == 'blog' %}class='active'{% endif %}>
+													<a href="{{site.baseurl}}/blog"> blog</a></li>
+												
+												<li {% if active[1] == 'calculator' %}class='active'{% endif %}>
+													<a href="{{site.baseurl}}/calculator">calculator </a></li>
+											</ul>
+										</li>
+										<li {% if active[1] == 'about' %}class='active'{% endif %}>
+											<a href="{{site.baseurl}}/about">about</a>
+										</li>
+										<!-- <li>
+											<a href="javascript:void(0);">Contact</a>
+										</li> -->
+									</ul>
+								</div>
+							</nav><!-- navbar -->
+							
+							<a href="{{site.baseurl}}/contact" class="ban-btn">Request a demo</a>
+						</div>
+				</div><!-- container -->
+			</header>

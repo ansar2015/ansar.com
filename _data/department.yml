@@ -1,0 +1,9 @@
+- name: Current number of servers
+  blurb: "Please estimate the number of apps in your environment that are candidates for Docker."
+  subtitle: Sworn Size
+  value: 20
+  
+- name: Deployment Frequency
+  blurb: "On average, how often does your organization release software in a month, per application?"
+  subtitle: Average Salary
+  value: 16

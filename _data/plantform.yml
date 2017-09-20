@@ -1,0 +1,15 @@
+- name: Victim Notifications
+  blurb: "Send crime victims emails and text messages that provide them with more information on their cases. These simple updates have led to over a 40% reduction in administrative call volume."
+  link: ../victim
+  images: mod-pic1.jpg
+
+- name: Non-Emergency Requests
+  blurb: "Manage and collaborate quickly with your officers online on all patrol requests, traffic enforcement requests, vacation/business checks, and more, which helps prevent crime while saving you time and money."
+  link: ../emergency
+  images: mod-pic2.jpg
+  class: child-content
+
+- name: CAD Autoresponder
+  blurb: "Automatically generate and sends a templated text  message to people who call 911 -- no matter what CAD you use."
+  link: ../responder
+  images: mod-pic3.jpg

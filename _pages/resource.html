@@ -1,0 +1,170 @@
+---
+layout: default
+title: Resource
+permalink: /resource/
+---
+		
+    <section class="banner clearfix">
+			<div class="banner-inner">
+				<div class="ban-image innr-pg">
+					<img src="{{site.baseurl}}/images/innr-ban3.jpg" alt="" />
+				</div>
+				
+					<div class="banner-caption inner-caption">
+						<div class="container">
+						<h2>{{ page.title }}</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- banner -->
+		
+		
+	<!-- saving-section -->
+	<section class="saving-section">
+		<div class="container">
+			<div class="head wow slideInUp">
+				<h2>Understanding cost savings</h2>
+			</div>	
+		<div class="row">
+			<div class="cost-calc-outer clearfix">
+			<div class="col-lg-6 col-sm-6">
+				<div class="calc-outer">
+					<div class="cost-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis. Suspendisse eu vehicula arcu,
+							 non eleifend arcu. Nam scelerisque aliquet est a imperdiet. Morbi in bibendum sem. </p>
+					</div>
+					<!-- <div class="graph-pic">
+						<img src="{{site.baseurl}}/images/graph.png" alt="" />
+					</div> -->
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-sm-6">
+				<div class="right-panel">
+					<div class="num-box">
+						<div class="num-hd">
+							<h3>projected cost savings: 100 sworn size department</h3>
+						</div>
+						<div class="txt-box clearfix">
+							<div class="lft-col">
+								<h2>320K <span>dollars saved </span></h2>
+							</div>
+							<div class="lft-col">
+								<h2>7700 <span>man hours saved </span></h2>
+							</div>
+						</div>
+						
+					</div>
+				</div> 
+			</div>
+			</div>
+			<a href="{{site.baseurl}}/calculator" class="more-btn">Calculate your own agencies Costs Savings </a>
+			
+		</div>
+		</div>
+	</section>
+<!-- saving-section -->
+
+	<!-- impact-section -->
+	<section class="impact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-sm-6">
+					<div class="imp-pic wow fadeInLeft">
+						<img src="{{site.baseurl}}/images/impact.jpg" alt="" />
+					</div>
+				</div>
+				
+				<div class="col-lg-6 col-sm-6">
+						<div class="mod-content imp-left wow fadeInRight">
+							<div class="head">
+								<h2>Impact on Citizens</h2>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis. Suspendisse eu vehicula
+							 arcu, non eleifend arcu. Nam scelerisque aliquet est a imperdiet. Morbi in bibendum sem.   </p>
+							
+							<a href="javascript:void(0);" class="more-btn">learn more</a>	 
+						</div>
+						
+					</div>
+			</div>
+		</div>
+	</section>	
+		
+	
+	<!-- impact-section -->
+
+
+<!-- blog-section -->
+	<div class="blog-section">
+		<div class="container">
+			<div class="head wow slideInUp">
+			<h2>From The Blog</h2>
+		</div>
+		
+		<div class="blog-outer">
+			<div class="row">
+			{% for post in site.posts offset: 0 limit: 2 %}
+				<div class="col-lg-6 col-sm-6 wow fadeInLeft">
+					<div class="blg-image">
+						{% if post.youtube %}
+									<a class="fancybox-media" href="{{ post.youtube}}"> 
+										<span class="vdo-icon"><img src="{{site.baseurl}}/images/yt-btn.png" alt="" /></span> 							
+										{% endif %}</a>
+									<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/images/{{ post.img }}" alt="" /></a>
+									
+						
+						<h2>Posted on {{ post.date | date_to_string }} {% if post.author %}by {{ post.author}}{% endif %}</h2>
+					</div>
+					
+					<a href="{{ site.baseurl }}{{ post.url }}"><div class="blog-cont">
+						<p><span>{{ post.title }}</span>
+							{{ post.content | strip_html | truncatewords:15}}</p>
+						</a>
+					</div>
+					</div>
+				{% endfor %}
+				
+			</div>
+		</div>
+		
+		<a href="{{site.baseurl}}/blog" class="more-btn">See All Blogs</a>	 
+		
+		</div>
+	</div>
+<!-- blog-section -->	
+		
+	
+		<!-- download -->
+			<section class="pdf-section">
+				<div class="container">
+					<div class="head wow slideInUp">
+						<h2>Download our whitepaper</h2>
+					</div>	
+					
+					<div class="whitepaper_slider">
+						<div class="row">
+							<div class="dwn-row">
+						{% for resourcedownloads in site.data.resourcedownload  %}
+						<div class="col-lg-4 col-sm-4">
+							<div class="pdf-box">
+							<a href="{{ resourcedownloads.download_file }}" class="pdf-icn" download>
+								<img src="{{site.baseurl}}/images/{{ resourcedownloads.icon }}" alt="" />
+							</a>
+							<div class="pdf-cont">
+								<h4>{{ resourcedownloads.name }}</h4>
+								<p>{{ resourcedownloads.blurb }}</p>
+								
+								<!-- <a href="javascript:void(0);" class="more-btn">Download</a>	  -->
+							</div>
+							</div>
+						</div>
+						{% endfor %} 
+						</div>
+					</div>
+					</div>
+				</div><!-- container -->
+			</section>
+		
+		<!-- /download -->

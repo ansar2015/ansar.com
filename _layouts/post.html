@@ -1,0 +1,132 @@
+---
+layout: default
+---
+
+		<section class="banner clearfix">
+			<div class="banner-inner">
+				<div class="ban-image innr-pg">
+					<img src="{{site.baseurl}}/images/innr-ban6.jpg" alt="" />
+				</div>
+				
+					<div class="banner-caption inner-caption">
+						<div class="container">
+						<h2>blog details</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- banner -->
+		
+		
+	<!-- nws-section -->
+	<!-- <section class="nwsletter-section">
+		<div class="container">
+			<div class="head">
+				<h2>signup form for the newsletter</h2>
+			</div>
+			<div class="news-inner">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lorem sem. Nulla eget <br/>urna sed libero blandit lobortis. Suspendisse eu arcu, non eleifend arcu.</p>
+				<form>
+					<div class="form-innr">
+						<input type="email" placeholder="EMAIL" class="nws-field" />
+						<input type="submit" value="Sign up" class="signup" />
+					</div>
+				</form>
+			
+			</div>
+		</div>
+	</section> -->
+<!-- nws-section -->
+
+	
+	<section class="bg-pg-section">
+		<div class="container">
+			<!-- <div class="head">
+				<h2>featured blog post</h2>
+			</div> -->
+			
+			<div class="row">
+				<div class="col-lg-8 col-sm-8">
+					
+					<div class="blog-inner">
+						<div class="post-box">
+							<div class="blg-image">
+								<div class="vdo-sec">
+									{% if page.youtube %}
+									<a class="fancybox-media" href="{{ page.youtube}}"> 
+										<span class="vdo-icon"><img src="{{site.baseurl}}/images/yt-btn.png" alt="" /></span> 							
+										</a> 
+									{% endif %}
+									<img src="{{site.baseurl}}/images/{{ page.img }}" alt="" />
+								</div>
+							<h2>Posted on {{ page.date | date: '%d %B , %Y' }}{% if page.author %}  by {{ page.author}}{% endif %}</h2>
+							</div>
+							
+							<div class="post-content">
+								<h3>{{ page.title }}  </h3>
+								{{ page.content }} 
+								   
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-sm-4">
+					<div class="right-bg">
+						<div class="search-box">
+							<form action="{{site.baseurl}}/search" method="get">
+							<!--<input type="text" class="search-field" placeholder="Search" />-->
+							<input type="text" class="search-field" id="search-box" placeholder="Search" name="query">
+							<input type="submit" class="search-icon" value="">	
+							</form>						
+						<ul id="search-results"></ul>
+
+						<script>
+						  window.store = {
+						    {% for post in site.posts %}
+						      "{{ post.url | slugify }}": {
+							"title": "{{ post.title | xml_escape }}",
+							"author": "{{ post.author | xml_escape }}",
+							"category": "{{ post.category | xml_escape }}",
+							"content": {{ post.content | strip_html | strip_newlines | jsonify }},
+							"url": "{{ post.url | xml_escape }}"
+						      }
+						      {% unless forloop.last %},{% endunless %}
+						    {% endfor %}
+						  };
+						</script>
+							
+							
+						</div>
+						
+						<div class="post-cat">
+							<div class="side-heading">
+								<h3>post categories</h3>
+							</div>
+							
+							<ul>											
+							{% for category in site.categories %}
+							  <li><a name="{{ category | first }}">{{ category | first }}</a></li>
+							{% endfor %}
+							</ul>
+						</div>
+						
+						<div class="twitter">
+							<div class="side-heading">
+								<h3>Twitter feed</h3>
+							</div>
+							
+							<div class="tweet">
+							<blockquote class="embedly-card"><h4><a href="https://twitter.com/spidrtech">SPIDR Tech (@SPIDRTech) | Twitter</a></h4><p>The latest Tweets from SPIDR Tech (@SPIDRTech). We give police departments the technology they need to provide citizens with the service they deserve. Los Angeles, CA</p></blockquote>
+							<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+							</div>
+							
+							
+						</div>
+					</div>	
+						
+				</div>
+			</div>
+		</div>
+	</section>	

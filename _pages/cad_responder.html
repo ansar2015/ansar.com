@@ -1,0 +1,194 @@
+---
+layout: default
+title: CAD Responder
+permalink: /responder/
+---
+
+		<section class="banner clearfix">
+			<div class="banner-inner">
+				<div class="ban-image innr-pg">
+					<img src="{{site.baseurl}}/images/innr-ban2.jpg" alt="" />
+				</div>
+				
+					<div class="banner-caption inner-caption">
+						<div class="container">
+						<h2>{{ page.title }}</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- banner -->
+		
+		
+	<!-- moduleX-section -->
+	<section class="support">
+		<div class="container">
+			<div class="head wow slideInUp">
+				<h2>Module x (eg Victim Support)</h2>
+				<p>In eget dignissim quam. Suspendisse potenti. Sed nunc augue, ullamcorper eget semper in.</p>
+			</div>	
+		</div>
+	
+		
+		<div class="x-module">
+			<div class="mbg-after">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-sm-5">
+						<div class="mod-content wow fadeInLeft">
+							<span><img src="{{site.baseurl}}/images/x-icon1.png" alt="" /></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis. Suspendisse eu 
+								vehicula arcu, non eleifend arcu. Nam scelerisque aliquet est a imperdiet. Morbi in bibendum sem.  </p>
+							
+							<a href="javascript:void(0);" class="more-btn">Set A Demo</a>	 
+						</div>
+					</div>
+					
+					<div class="col-lg-7 col-sm-7">
+						<div class="module_slider">
+							<div class="item">
+								<div class="module-pic">
+									<img src="{{site.baseurl}}/images/vc1.jpg" alt="" />
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="module-pic">
+									<img src="{{site.baseurl}}/images/vc2.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+		</div>	
+		
+	</section>
+<!-- moduleX-section -->
+
+    
+    		<!-- platform section -->
+			<section class="platform-section blue-bg">
+				<div class="container">
+					<div class="head wow slideInUp">
+						<h2>Features</h2>
+						<p>The World's First Community Relationship Management (CRM) Platform for Law Enforcement.</p>
+					</div>	
+					
+					<div class="row">
+						<div class="platform-innr wow slideInDown">
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon1.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon2.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon3.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon4.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- row -->	
+					
+				</div><!-- container -->
+			</section>
+		
+		<!-- /platform section -->    
+        
+
+	<div class="how-help">
+		<div class="container">
+			<div class="head wow slideInUp">
+			<h2>How This Helps</h2>
+		</div>
+		
+		<div class="hlp-outer">
+			<div class="row">
+				{% for help in site.data.helps  %}
+				<div class="col-lg-6 col-sm-6 wow fadeInLeft">
+					<div class="hlp-image">
+						<img src="{{site.baseurl}}/images/{{ help.images }}" alt="" />
+						<h2>{{ help.name }}</h2>
+					</div>
+					
+					<div class="hlp-cont">
+						<p> {{ help.blurb }} </p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		
+		</div>
+	</div>
+	
+	
+		<!-- whitepaper	 -->
+			<div class="down-wht">
+				<div class="container">
+					<div class="head wow slideInUp">
+						<h2>Download our whitepaper</h2>
+					</div>	
+					
+					<div class="whitepaper_slider">
+						<div class="row">
+					{% for responders in site.data.responder  %}
+						<div class="col-lg-4 col-sm-4">
+							<div class="pdf-box">
+							<div class="pdf-icn">
+								<img src="{{site.baseurl}}/images/pdf.png" alt="" />
+							</div>
+							<div class="pdf-cont">
+								<h4>{{ responders.name }}</h4>
+								<p>{{ responders.blurb }}</p>
+								
+								<a href="{{ responders.download_file }}" class="more-btn" download >Download</a>	 
+							</div>
+							</div>
+						</div>
+						{% endfor %}
+					     </div>
+					</div>
+				</div><!-- container -->
+			</div>
+		
+		<!-- whitepaper	 -->

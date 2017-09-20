@@ -1,0 +1,148 @@
+---
+layout: default
+title: Product
+permalink: /product/
+---
+
+		<section class="banner clearfix">
+			<div class="banner-inner">
+				<div class="ban-image innr-pg">
+					<img src="{{site.baseurl}}/images/innr-ban1.jpg" alt="" />
+				</div>
+				
+					<div class="banner-caption inner-caption">
+						<div class="container">
+						<h2>The Spidr Tech Platform</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- banner -->
+		
+		<!-- platform section -->
+			<section class="platform-section">
+				<div class="container">
+					<div class="head wow slideInUp">
+						<h2>World-Class Customer Service Software for Law Enforcement</h2>
+						<p>Building upon best practices in the technology industry -- and driven by years of on-the-ground experience in law enforcement -- the SPIDR Tech 
+							Platform is specifically designed to help your agency improve public perception, boost staff efficiency, and position your agency for ongoing 
+							innovation. Here’s how...</p>
+					</div>	
+					
+					<div class="row">
+						<div class="platform-innr wow slideInDown">
+							<div class="col-lg-3 col-sm-3">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon1.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>cloud based</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et quam ac orci tincidunt eleifend.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon2.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>secure</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et quam ac orci tincidunt eleifend.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon3.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Easily deployed</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et quam ac orci tincidunt eleifend.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon4.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Transparently priced</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et quam ac orci tincidunt eleifend.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>						
+				</div>
+			</section>
+		
+		<!-- /platform section -->
+
+
+<!-- module-section -->
+	<section class="module-section clearfix">
+		<div class="module-heading">
+			<h2>modules</h2>
+			 <p>Depending on your needs, the SPIDR Tech platform can offer distinct modules, <br>specifically designed to address key  challenge areas for agencies. </p>
+		</div>
+	
+	<div class="main-outer">	
+		{% for product in site.data.plantform  %}
+		<div class="mod-one">
+			<div class="mbg-after">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-sm-5 {{ product.class }}">
+						<div class="mod-content">
+							<span><img src="{{site.baseurl}}/images/mod-icon1.png" alt="" /></span>
+							<h3>{{ product.name }}</h3>
+							<p>{{ product.blurb }}</p>
+							
+							<a href="{{ product.link }}" class="more-btn">Learn More</a>	
+							<a href="javascript:void(0);" class="more-btn">SEE IT IN ACTION</a>	 
+						</div>
+					</div>
+					
+					<div class="col-lg-7 col-sm-7">
+						<div class="mod-picture">
+							<img src="{{site.baseurl}}/images/{{ product.images }}" alt="{{ product.name }}" />
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>	
+		{% endfor %}
+		</div>	
+	</section>
+<!-- module-section -->
+
+
+
+<!-- alert section -->
+	<section class="alert-outer">
+		<div class="head">
+			<h2>Flagship Partnership Program</h2>
+		</div>
+			<div class="demo-section remove">
+				<div class="container">
+					<!-- <div class="demo-logo">
+						<img src="images/demo-logo.png" alt="" />
+					</div> -->
+					<div class="alert-section">
+						<p>If you're an agency interested in all these modules -- and future updates -- apply to join our flagship partnership program for discounts and a seat at the 
+							table as the platform continues to grow.</p>
+					</div>
+					
+					<a href="javascript:void(0);" class="more-btn">Learn More</a>
+			
+				</div>
+			</div>
+	</section>				

@@ -1,0 +1,335 @@
+---
+layout: default
+title: About
+active: about
+permalink: /about/
+---
+		<section class="banner clearfix">
+			<div class="banner-inner">
+				<div class="ban-image innr-pg">
+					<img src="{{site.baseurl}}/images/innr-ban4.jpg" alt="" />
+				</div>
+				
+					<div class="banner-caption inner-caption">
+						<div class="container">
+						<h2>about</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- banner -->
+		
+		
+	<!-- abt-us -->
+	<section class="abt-us">
+		<div class="container">
+			<div class="head wow slideInUp">
+				<h2>About Spidr Tech</h2>
+			</div>	
+		
+			
+			<div class="abt-para wow slideInUp">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, arcu nec sagittis sodales, augue orci pharetra dolor, tincidunt sollicitudin sapien 
+					ectus sit amet libero. Maecenas auctor velit in magna gravida aliquam. Praesent sit amet sem in nibh auctor tempor. Aenean vel orci libero. Proin id nibh
+					varius, pharetra mauris ac, blandit dolor. Fusce et sem eu massa imperdiet suscipit. In aliquet, massa malesuada volutpat imperdiet.</p>
+					
+				<div class="abt-video wow slideInUp">
+					<div class="vdo-sec">
+						<a class="fancybox-media" href="https://youtu.be/EDMun9BtSwM"> <img src="{{site.baseurl}}/images/video-pic2.jpg" alt="" /> 
+							<span class="vdo-icon"><img src="{{site.baseurl}}/images/play-btn.png" alt="" /></span> 
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	</section>
+<!-- abt-us  -->
+
+
+		<!-- platform section -->
+			<section class="platform-section">
+				<div class="container">
+					<div class="head wow slideInUp">
+						<h2>OUR VALUES</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>	
+					
+					<div class="row">
+						<div class="platform-innr wow slideInDown">
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon1.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon2.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon3.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-sm-3 md_out bdr">
+								<div class="plat-box">
+									<div class="plat-pic">
+										<img src="{{site.baseurl}}/images/pl-icon4.png" alt="" />
+									</div>
+									<div class="plat-text">
+										<h3>Lorem ipsum</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- row -->	
+					
+				</div><!-- container -->
+			</section>
+	<!-- /platform section -->
+	
+	
+	<!-- team -->
+		<section class="team-section">
+			<div class="container">
+				<div class="head">
+					<h2>Leadership</h2>
+				</div>
+				
+				<div class="team-mates clearfix">
+			
+					<div id="parentHorizontalTab">
+						<ul class="resp-tabs-list hor_1">
+							<li class="team-btn">
+								Leadership Team
+							</li>							
+						</ul>
+						
+						<div class="resp-tabs-container hor_1">
+							<div>
+								<div class="team_slider">
+								{% for leaderships in site.data.leadership  %}
+										<div class="team-outer">
+											<div class="membr">
+												<img src="{{site.baseurl}}/images/{{ leaderships.images }}" alt=""/>
+											</div>
+											<div class="member-detail">
+												<h4>{{ leaderships.name }}</h4>
+												<span>{{ leaderships.designation }}</span>
+											</div>
+											<div class="membr-social">
+												<ul>
+													<li><a href="{{ leaderships.linkedin }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+													<li><a href="{{ leaderships.twitter }}"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+										</div>
+										{% endfor %}						
+                                    
+                             				    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>		
+	
+	<!-- /team -->	
+	
+	
+	<!-- /partner section -->
+		<section class="partner-section">
+			<div class="container">
+				<div class="head">
+					<h2>Partners</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				</div>
+				
+				<div class="partner_slider wow fadeInRight">
+					<div class="item">
+						<div class="par-outer">
+							<div class="par-logo">
+								<img src="{{site.baseurl}}/images/partner-1.png" alt="" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="par-outer">
+							<div class="par-logo">
+								<img src="{{site.baseurl}}/images/partner-2.png" alt="" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="par-outer">
+							<div class="par-logo">
+								<img src="{{site.baseurl}}/images/partner-3.png" alt="" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="par-outer">
+							<div class="par-logo">
+								<img src="{{site.baseurl}}/images/partner-4.png" alt="" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="par-outer">
+							<div class="par-logo">
+								<img src="{{site.baseurl}}/images/partner-5.png" alt="" />
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+	<!-- /partner section -->
+
+<!-- testimonial -->
+	<section class="testimonial-section testimonial_about clearfix">
+        <div class="container">
+           <div class="head">
+                <h2>What agencies are saying</h2>
+            </div>            
+         </div>   
+            <div class="test-left">
+                <div class="back-pic wow fadeInLeft">
+                    <img src="{{site.baseurl}}/images/back-pic1.jpg" alt="" />
+                </div>
+                <div class="test-content wow fadeInUp">
+                	
+                    <h2>Grover Beach Police Department</h2>
+		{% for testimonial in site.data.testimonials limit:1 %}
+                    <div class="test-card ">
+                        <div class="author-pic">
+                            <img src="{{site.baseurl}}/images/{{ testimonial.images }}" alt="" />
+                        </div>
+                        <h3>{{ testimonial.name }}</h3>
+                        <p>{{ testimonial.blurb }}   </p>
+                    </div>
+		{% endfor %}	
+		
+			</div>
+       		 </div>								
+	</section>
+<!-- testimonial -->
+		<section class="media-kit">
+			<div class="container">
+				<div class="media-hd wow fadeInUp">
+					<h2>Press Kit &amp; Media Assets</h2>
+				</div>
+				<div class="media-para">
+					<p>View press materials here. Access the media assets for images and case studies, and download the press kit for information, including Axon's company profile,
+					 history, and leadership, as well as information on our body cameras and digital evidence management systems.</p>
+				 
+				 <!--<form>
+				 	<input type="email" placeholder="EMAIL" class="mail-box" />
+				 	<input type="submit" value="SEND REQUEST" class="req-btn" />
+				 </form>-->
+				 
+				
+					<!--[if lte IE 8]>
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+					<![endif]-->
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+					<script>
+					  hbspt.forms.create({ 
+					    css: '',
+					    portalId: '1642967',
+					    formId: '1c8314c6-4326-413e-ae0c-c97818782c9e'
+					  });
+					</script>
+
+
+				</div>
+			</div>
+		</section>
+		
+		
+		
+<!-- 	office-loc	 -->
+		<section class="office">
+			<div class="container">
+				<div class="head wow slideInUp">
+					<h2>Contact Us</h2>
+				</div>
+				
+				<div class="add-outer">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.206617298962!2d-118.41241748516995!3d33.88433218065184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b3ec9ee1603f%3A0xd437bde886cbccdc!2s1100+Manhattan+Ave%2C+Manhattan+Beach%2C+CA+90266%2C+USA!5e0!3m2!1sen!2sin!4v1503660324300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="full-outer">
+                                <div class="full-add">
+                                    <span><img src="{{site.baseurl}}/images/loc-icon.png" alt="" /></span>
+                                    <h4>LOS ANGELES</h4> 
+                                    <p>1100 Manhattan Ave <br /> Manhattan Beach, CA 90266</p>
+                                </div>
+
+                                <div class="full-add con-detail">
+                                    <ul>
+                                        <li>
+                                            <span><img src="{{site.baseurl}}/images/ph-icon.png" alt=""></span>
+                                            <h4>Phone</h4>
+                                            <a href="javascript:void(0);">012 345 6789</a>
+                                        </li>
+                                        <li>
+                                            <span><img src="{{site.baseurl}}/images/env.png" alt=""></span>
+                                            <h4>Email</h4>
+                                            <div class="mail">
+                                                <p>Sales</p>
+                                                <a href="mailto:sales@spidrtech.com;">sales@spidrtech.com</a>
+                                                <p>Support</p>
+                                                <a href="mailto:support@spidrtech.com;">support@spidrtech.com</a>
+                                                <p>Careers</p>
+                                                <a href="mailto:careers@spidrtech.com;">careers@spidrtech.com</a>
+                                                <p>General Inquiries</p>
+                                                <a href="mailto:info@spidrtech.com;">info@spidrtech.com</a>
+                                            </div>
+                                        </li>
+                                    </ul>                                                                        
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>					
+				</div>
+			</div>
+		</section>
+
+<!-- 	office-loc	 -->

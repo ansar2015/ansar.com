@@ -1,0 +1,111 @@
+---
+layout: default
+title: Home
+active: Home
+permalink: /home/
+---
+
+<section class="banner clearfix">			
+			<div class="banner_slider"> 
+			 	<div class="item">
+					<div class="banner-inner">
+						<div class="ban-image">
+							<img src="{{site.baseurl}}/images/banner1.jpg" alt="" />
+						</div>
+						
+							<div class="banner-caption">
+								<div class="container">
+								<h1>From Calls to 
+									<span class='fadey'>emails</span>
+									<span class='fadey click'>clicks</span>
+									<span class='fadey'>texts </span>
+								</h1>
+								<h2>SPIDR Tech provides law enforcement agencies a customer service platform that cuts calls and costs, and improves public perception.</h2>
+								<div class="banner-bttn">
+									<a href="javascript:void(0);" class="ban-btn">Learn More</a>
+									<a href="javascript:void(0);" class="ban-btn">Set up Demo</a>
+								</div>
+							</div>
+						</div>
+					</div>
+		 		</div>
+		
+		 	</div> 
+		</section>
+		<!-- banner -->
+<section class="product-section">
+				<div class="container">
+					<div class="head wow slideInUp">
+						<h2>The SPIDR Tech Platform </h2>
+						<p>Much of daily law enforcement is customer service: taking calls, informing citizens, conducting follow-ups and providing updates. 
+						<strong>With SPIDR Tech, you can take your customer service into the 21st century:</strong> through our <strong>secure</strong>, 
+						<strong>cloud-based</strong>, and <strong>scalable</strong> system, your agency can enhance citizen experience through automated emails and 
+						texts --  preserving staff time for best-in-class service delivery.</p>
+					</div>	
+					
+					<div class="product-innr wow slideInDown">
+						{% for product in site.data.plantform limit:3 %}
+						<div class="prod1">
+							<div class="pro-pic">
+								<img src="{{site.baseurl}}/images/{{ product.images }}" alt="{{ product.name }}" />
+							</div>
+							<div class="sm-logo">
+								<img src="{{site.baseurl}}/images/sm-logo.png" alt="" />
+							</div>
+							<div class="pro-text">
+								<h3>{{ product.name }}</h3>
+								<p>{{ product.blurb }}</p>
+								
+								<a href="{{ product.link }}" class="more-btn">Learn More</a>
+							</div>
+						</div>
+						{% endfor %}
+												
+					</div>	
+				</div>
+			</section>
+		
+		<!-- /product section -->
+
+
+<!-- testimonial -->
+	<section class="testimonial-section clearfix"> 
+		 {% for testimonial in site.data.testimonials limit:2 %}
+		<div class="test-left">
+			<div class="back-pic wow fadeInLeft">
+				<img src="{{site.baseurl}}/images/back-pic2.jpg" alt="" />
+			</div>
+			<div class="test-content wow fadeInUp">
+				<h2> {{ testimonial.title }}</h2>
+				<div class="test-card ">
+					<div class="author-pic">
+						<img src="{{site.baseurl}}/images/{{ testimonial.images }}" alt="" />
+					</div>
+					<h3>{{ testimonial.name }}</h3>
+					<p>{{ testimonial.blurb }} <span><img src="{{site.baseurl}}/images/cl-quote.png" alt="" /></span>
+					</p>
+					{{ testimonial.list }}
+				</div>
+				</div>
+			</div>
+			{% endfor %}			
+	</section>
+<!-- testimonial -->
+
+
+		<!-- demo section -->
+			<section class="demo-section">
+				<div class="container">
+					<div class="wow fadeInUp">
+					<div class="demo-logo">
+						<img src="{{site.baseurl}}/images/demo-logo.png" alt="" />
+					</div>
+					
+					<h2>Request Us For A Demo To Know More</h2>
+					
+					<a href="contact" class="more-btn">Request a demo</a>
+				</div>
+				</div>
+			</section>
+		
+		<!-- /demo section -->

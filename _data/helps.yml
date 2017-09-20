@@ -1,0 +1,7 @@
+- name: For Residents
+  blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis. Suspendisse eu vehicula arcu,non eleifend arcu. Nam scelerisque aliquet est a imperdiet. Morbi in bibendum sem."
+  images: help-pic1.jpg
+
+- name: For Officers
+  blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis. Suspendisse eu vehicula arcu,non eleifend arcu. Nam scelerisque aliquet est a imperdiet. Morbi in bibendum sem."
+  images: help-pic2.jpg

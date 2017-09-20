@@ -1,0 +1,29 @@
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  icon: pdf.png
+  download_file: ../images/help-pic1.jpg
+  
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  icon: video.png
+  download_file: ../images/help-pic1.jpg
+  
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  icon: graphics.png
+  download_file: ../images/help-pic1.jpg
+  
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  icon: video.png
+  download_file: ../images/help-pic1.jpg
+  
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  icon: pdf.png
+  download_file: ../images/help-pic1.jpg
+  
+- name: Lorem ipsum dolor sit amet
+  blurb: "Lorem ipsum dolor sit amet."
+  icon: video.png
+  download_file: ../images/help-pic1.jpg

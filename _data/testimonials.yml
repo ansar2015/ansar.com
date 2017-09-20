@@ -1,0 +1,32 @@
+- name: Hillel Arnold
+  blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and improved citizen satisfaction, and expect even more."
+  org: Rockefeller Archive Center
+  images: testimonial-pic1.png
+  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div>
+
+- name: Andromeda Yelton
+  blurb: "SPIDR Tech gave us a new way to do the customer service business: digital, automated, fast, and easy. We saw immediate internal cost savings and improved citizen satisfaction, and expect even more."
+  org: Director-at-large, LITA
+  images: testimonial-pic2.png
+  list:  <div class="list"><ul><li><span><img src="images/bullet.png" alt="" /></span>500%+ Citizen Engagement</li><li><span><img src="images/bullet.png" alt="" /></span>1000+ Hours Saved</li></ul> </div>
+
+
+- name: Bess Sadler
+  blurb: "This community has been a source of strength to me, a place where I have made wonderful friends and developed my own skills far beyond what I once thought I was capable of."
+  org: Stanford University
+  twitter: eosadler
+
+- name: Erin White
+  blurb: "Code4Lib's connecting idea: the core of a tech community isn’t code; it’s relationships. Healthy relationships build healthy communities, and healthy communities are open, communicative, and inclusive."
+  org: Virginia Commonwealth University
+  twitter: erinrwhite
+
+- name: Corey Harper
+  blurb: "Code4Lib is *the* place to become better by humbly exposing your limitations to those around you. Thank you *all*. #c4l13"
+  org: New York University
+  twitter: chrpr
+
+- name: Tara Robertson
+  blurb: "The work that people in the code4lib community do, the ways that we’re working to be more inclusive community, and the things that we accomplish when we work together give me hope."
+  org: Langara College
+  twitter: tararobertson

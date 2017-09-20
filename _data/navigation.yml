@@ -1,0 +1,24 @@
+- title: Home
+  url: /spider.com.github.io
+- title: Product
+  url: /product
+  sublinks:
+    - title: Victim
+      url: /victim
+    - title: Emergency
+      url: /emergency
+    - title: Responder
+      url: /responder
+- title: Resource
+  url: /resource
+  sublinks:
+    - title: Blog
+      url: /blog
+    - title: Emergency
+      url: /emergency
+    - title: Responder
+      url: /responder  
+- title: About
+  url: /about
+- title: Contact
+  url: /contact

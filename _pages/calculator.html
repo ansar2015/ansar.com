@@ -1,0 +1,113 @@
+---
+layout: default
+title: Calculator
+permalink: /calculator/
+---
+
+		<section class="banner clearfix">
+			<div class="banner-inner">
+				<div class="ban-image innr-pg">
+					<img src="{{site.baseurl}}/images/ban_calculator.jpg" alt="" />
+				</div>
+				
+					<div class="banner-caption inner-caption">
+						<div class="container">
+						  <h2>COST SAVINGS <br/> CALULATOR</h2>
+                        </div>    
+					</div>
+			</div>
+		</section>
+		<!-- banner -->
+		
+		
+	<!-- cost saving -->
+	<section class="abt-us cost_savings">
+		<div class="container">
+			<div class="head wow slideInUp">
+				<h2>Understanding cost savings</h2>
+			</div>	
+					
+			<div class="abt-para wow slideInUp">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lorem sem. Nulla eget urna sed libero blandit lobortis. Suspendisse eu vehicula 
+					arcu, non eleifend arcu. Nam scelerisque aliquet est a imperdiet. Morbi in bibendum sem
+				</p>
+		</div>
+		</div>	
+		
+	</section>
+<!-- cost saving -->
+
+	<section class="application">		                                     
+        
+        <div class="application_inner">		
+			<div class="container">
+				<div class="appli_mat">
+					<div class="appli_hd">
+						<h2>
+							ABOUT YOUR DEPARTMENT
+						</h2>
+					</div>
+                    <div class="appli_txtouter">
+		{% for departments in site.data.department  %}    
+                        <div class="appli_txt clearfix">
+                            <div class="txt_lft">
+                                <div class="txt_hd">
+                                    <h3>
+                                        {{ departments.name }}
+                                    </h3>
+                                </div>
+                                <p>
+                                    {{ departments.blurb }}
+                                </p>
+                            </div>
+                            <div class="apps">
+                                <div class="input-wrap">
+                                    <span>{{ departments.subtitle }}:</span>
+                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="{{ departments.value }}">
+                                  </div>
+                            </div>
+                        </div>
+		{% endfor %}
+                    </div>                                                           
+		  </div>				
+                </div>
+	   </div> 
+        <div class="application_inner">		
+			<div class="container">
+				<div class="appli_mat">
+					<div class="appli_hd">
+						<h2>
+							ABOUT YOUR OPERATIONS
+						</h2>
+					</div>
+                    <div class="appli_txtouter">
+			{% for operation in site.data.operations  %} 
+                        <div class="appli_txt clearfix">
+                            <div class="txt_lft">
+                                <div class="txt_hd">
+                                    <h3>
+                                       {{ operation.name }}
+                                    </h3>
+                                </div>
+                                <p>
+                                    {{ operation.blurb }}
+                                </p>
+                            </div>
+                            <div class="apps">
+                                <div class="input-wrap">
+                                    <span> {{ operation.subtitle }}: </span>
+                                    <input type="number" required="" name="numberOfApps" class="numberOfApps" placeholder="e.g. 10" value="{{ operation.value }}">
+                                  </div>
+                            </div>
+                        </div>
+			{% endfor %}
+                    </div>   
+                    
+                    <div class="application_btnouter">
+                        <a href="javascript:void(0);">Calculate savings</a>
+                    </div>
+			</div>				
+            	    </div>
+		</div>									
+	</section>
